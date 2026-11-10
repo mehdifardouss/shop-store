@@ -43,16 +43,18 @@ function CreatEtDisplayProduct(products) {
                             </button>
                         </article>`
     });
+  
 }
 
+function SearchProduct(products) {
+    Search.addEventListener("input", event => {
+        const value = event.target.value.toLowerCase();
 
-function SearchProduct(products){
-     Search.addEventListener("input" , (item)=>{
-        const valeur = item.target.value.toLowerCase();
-        const resultat =products.filter((prod)=>prod.name.toLowerCase().includes(valeur)
-    );
-        ProductsPlace.innerHTML = ""
-        CreatEtDisplayProduct(resultat)
+        const result = products.filter(p =>
+            p.name.toLowerCase().includes(value)
+        );
 
-     });    
+        ProductsPlace.innerHTML = "";
+        CreatEtDisplayProduct(result);
+    });
 }
