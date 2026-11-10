@@ -45,3 +45,16 @@ http://127.0.0.1:3000${p.image}" alt="PlayStation 5">
     });
   
 }
+
+function SearchProduct(products) {
+    Search.addEventListener("input", event => {
+        const value = event.target.value.toLowerCase();
+
+        const result = products.filter(p =>
+            p.name.toLowerCase().includes(value)
+        );
+
+        ProductsPlace.innerHTML = "";
+        CreatEtDisplayProduct(result);
+    });
+}
