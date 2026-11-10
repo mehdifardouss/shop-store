@@ -15,8 +15,8 @@ header {display: flex;justify-content: space-between;align-items: center;padding
 
 .banner-text h2 {font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;color: rgb(11, 187, 11);}
 
-button{ background-color:rgb(72, 156, 3) ;padding: 20px;border-radius: 10px;border: 1px solid ;color: #111;font-weight: bolder;font-size: 100%;
-}
+button{ background-color:rgb(72, 156, 3) ;padding: 20px;border-radius: 10px;border: 1px solid ;color: #111;font-weight: bolder;font-size: 100%;}
+
 .filters { padding: 40px 5%;background: #181818;}
 
 .filters h2 { margin-bottom: 25px;font-size: 28px;color: rgb(72, 156, 3);}
@@ -36,10 +36,12 @@ button{ background-color:rgb(72, 156, 3) ;padding: 20px;border-radius: 10px;bord
 .products-list {display: grid;grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));gap: 20px;}
 
 .product-card { margin: 30px;background: #222;padding: 15px;width: 280px;border-radius: 10px;}
+
+.product-card :hover{  transform: translateY(-2px); }
+
 .product-card img {width: 100%;height: 180px;object-fit: contain;}
 
-.product-card h3,
-.product-card p {margin: 10px 0;}
+.product-card h3,.product-card p {margin: 10px 0;}
 
 .product-card h4 {color: rgb(72, 156, 3);margin-bottom: 15px;}
 
@@ -59,10 +61,16 @@ footer li {margin-bottom: 10px;}
 
 footer a {color: white;text-decoration: none;}
 
-footer a:hover {color: rgb(72, 156, 3);}
+ a:hover {color: rgb(72, 156, 3);}
 
-.text p{font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;color: antiquewhite;}
+.text p{font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;color: antiquewhite; padding: 10px;}
 
 .text h3{ font-weight: bold;}
 
 .social{display: flex;flex-direction: column;gap: 20px;align-items: center;}
+
+.rtulidateur{display: flex; gap: 20px;align-items: center;}.la{display: flex; gap: 5px; align-items: center;}
+  
+.iback{background-color: #96d422; border: 1px solid rgb(72, 156, 3); height: 30px;width: 30px;border-radius: 50%;text-align: center;}
+
+ .social a i { display: inline-flex;  flex-direction: column; align-items: center; }
