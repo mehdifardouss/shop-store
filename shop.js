@@ -203,26 +203,5 @@ FilterByStock.addEventListener("change", FilterProductByStock);
 
 
 
-function FilterProductByPrice() {
-
-    const price = FilterByPrix.value;
-
-    if (price === "all") {
-        getdata();
-    }
-    else {
-        getdata(`${URL}?maxPrice=${encodeURIComponent(price)}`);
-    }
-}
-
-FilterByPrix.addEventListener("change", FilterProductByPrice);
-
-
-function ResetFilters() {
-    getdata();
-}
-FilterForm.addEventListener("reset", () => ResetFilters,);
-
-
 
 getdata();
