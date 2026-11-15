@@ -97,8 +97,8 @@ const Search = document.querySelector(".search");
 const FilterByRelevance = document.querySelector(".byrelevance");
 const FilterByCategorie = document.querySelector(".bycategorie");
 const FilterByStock = document.querySelector(".bystock");
-const FilterByPrix = document.querySelector(".filter-options form select:nth-of-type(3)");
-const FilterForm = document.querySelector(".filter-options form");
+const FilterByPrix = document.querySelector(".byprix");
+const FilterForm = document.querySelector(".reset");
 
 const URL = "http://localhost:3000/api/products";
 
@@ -141,7 +141,8 @@ function getdata(url = URL) {
     fetch(url)
         .then(response => {
             if (!response.ok) {
-                throw new Error(`Response status: ${response.status}`);
+              console.log("ereure");
+              
             }
 
             return response.json();
@@ -221,7 +222,7 @@ FilterByPrix.addEventListener("change", FilterProductByPrice);
 function ResetFilters() {
     getdata();
 }
-FilterForm.addEventListener("reset", () => ResetFilters,);
+FilterForm.addEventListener("click", ResetFilters);
 
 
 
