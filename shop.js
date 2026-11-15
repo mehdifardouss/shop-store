@@ -99,7 +99,6 @@ const FilterByCategorie = document.querySelector(".bycategorie");
 const FilterByStock = document.querySelector(".bystock");
 const FilterByPrix = document.querySelector(".filter-options form select:nth-of-type(3)");
 const FilterForm = document.querySelector(".filter-options form");
-const ResetBtn = document.querySelector(".reset");
 
 const URL = "http://localhost:3000/api/products";
 
@@ -202,28 +201,28 @@ function FilterProductByStock() {
 
 FilterByStock.addEventListener("change", FilterProductByStock);
 
+
+
 function FilterProductByPrice() {
-    FilterByPrix.addEventListener("change", () => {
 
-        const price = FilterByPrix.value;
+    const price = FilterByPrix.value;
 
-        if (price === "all") {
-            getdata();
-        } else {
-            getdata(`${URL}/products?maxPrice=${price}`);
-        }
-
-    });
+    if (price === "all") {
+        getdata();
+    }
+    else {
+        getdata(`${URL}?maxPrice=${encodeURIComponent(price)}`);
+    }
 }
 
+FilterByPrix.addEventListener("change", FilterProductByPrice);
 
-function ResetFilter() {
-    FilterByPrix.value = "all";
-    FilterByRelevance.value = "all";
-    FilterByCategorie.value = "all";
-    FilterByStock.value = "all";
 
+function ResetFilters() {
     getdata();
 }
-ResetBtn.addEventListener("click", ResetFilter);
+FilterForm.addEventListener("reset", () => ResetFilters,);
+
+
+
 getdata();
