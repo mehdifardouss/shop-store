@@ -30,25 +30,21 @@
     .filter-search input::placeholder {color: #aaa;}
 
 
-form {display: flex;gap: 15px;flex-wrap: wrap;}
+    form {display: flex;gap: 15px;flex-wrap: wrap;}
 
-form select {flex: 1;padding: 12px;background: #222;color: white;border: 1px solid #444;border-radius: 6px;}
-
+    form select {flex: 1;padding: 12px;background: #222;color: white;border: 1px solid #444;border-radius: 6px;}
 
     .products-list { margin: 30px;display: grid;grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));gap: 20px;}
 
-.product-card { border: #96d422 solid 2px;background: #222;padding: 15px;border-radius: 10px; width: 300px; height: 450px;}
+    .product-card { border: #96d422 solid 2px;background: #222;padding: 15px;border-radius: 10px; width: 300px; height: 450px;}
 
     .product-card :hover{  transform: translateY(-2px); }
 
     .product-card img {width: 100%;height: 180px;object-fit: contain;  transition: transform 0.3s ;}
     
+    .rtulidateur a { color: #55f793; text-decoration: none;}
 
-
-
-.product-card img:hover {
-    transform: scale(1.1);
-}
+    .product-card img:hover { transform: scale(1.1);}
 
     .product-card h3,.product-card p {margin: 10px 0;}
 
@@ -70,7 +66,6 @@ form select {flex: 1;padding: 12px;background: #222;color: white;border: 1px sol
 
     footer a {color: white;text-decoration: none;}
 
-
     a:hover {color: rgb(72, 156, 3);  transform: translateY(-3px); }
 
     .text p{font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;color: antiquewhite; padding: 10px;}
@@ -80,7 +75,47 @@ form select {flex: 1;padding: 12px;background: #222;color: white;border: 1px sol
     .social{display: flex;flex-direction: column;gap: 20px;align-items: center;}
 
     .rtulidateur{display: flex; gap: 20px;align-items: center;}.la{display: flex; gap: 5px; align-items: center;}
-    
+     .rtulidateur a{text-decoration: none; color: rgb(72, 156, 3); }
     .iback{background-color: #96d422; border: 1px solid rgb(72, 156, 3); height: 30px;width: 30px;border-radius: 50%;text-align: center;}
 
     .social a i { display: inline-flex;  flex-direction: column; align-items: center; }
+
+    .PRODUCTS { width: 100%;max-width:100%; margin: 50px auto;padding: 25px;background-color: #222; border-radius: 12px;}
+.PRODUCTS article{ height: 200px;}
+    .PRODUCTS h1 {font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;color: rgb(11, 187, 11); gap: 20px; padding-bottom: 10px;}
+
+    .PRODUCTS > p {color: #777;margin-bottom: 25px;}
+
+    .myproduct-card {display: flex;align-items: center;gap: 20px;padding: 20px;margin-bottom: 15px; background-color: #222; border: 2px solid #96d422; border-radius: 10px;color: white;}
+
+    .myproduct-card img {width: 180px;height: 150px;object-fit: contain;}
+
+    .myproduct-card h3 {font-size: 20px;color: #ffffff;}
+
+    .myproduct-card h4 {color: #96d422;font-size: 20px; }
+
+    .dataa {display: flex; justify-content: space-between; flex-direction: row; gap: 90px; align-items: center;}
+
+    .deleteproduct {background-color:red ;padding: 20px;margin-bottom: 20px; border-radius: 10px;border: 1px solid ;color: #111;font-weight: bolder;font-size: 100%;}
+
+    .totale {text-align: right;font-size: 30px;font-weight: bold;color: #04a038;margin-top: 25px;}
+     
+    .addorders {display: block;margin-left: auto;padding: 12px 22px;border: none;border-radius: 7px;background-color: #04a038;color: white;}
+
+    .confirmebutton {background-color:rgb(72, 156, 3) ;padding: 20px;margin-bottom: 20px; border-radius: 10px;border: 1px solid ;color: #111;font-weight: bolder;font-size: 100%;}
+
+    .addorders:hover{  transform: translateY(-2px); }
+
+    .deleteproduct:hover{  transform: translateY(-2px); }
+
+    .confirmebutton :hover{  transform: translateY(-2px); }
+
+    .buttons{ margin-left: auto; align-items: center;}
+
+    .client-form { width: 90%;margin: 80px; padding: 25px; display: flex; flex-direction: column;gap: 18px;background-color: #222;border: 2px solid #96d422;border-radius: 10px;}
+    .client-form h2 {font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;color: rgb(11, 187, 11); gap: 20px; padding-bottom: 10px;}
+
+    .form-client input{width: 100%;padding: 12px;background-color: #181818;color: white;border: 1px solid #1b9f07;border-radius: 6px;}
+
+    .client-form .confirm-order { padding: 14px; ; background-color: #96d422; color: #111;border: none; border-radius: 6px; font-weight: bold;}
+
