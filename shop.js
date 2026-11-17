@@ -1,96 +1,6 @@
-//     const ProductsPlace = document.querySelector(".products-list");
-//     const Search = document.querySelector(".search");
+//--------------------------parte 1
 
-//     const FilterByPrix = document.querySelector(".byprix");
-//     const FilterByRelevance = document.querySelector(".byrelevance");
-//     const FilterByCategorie = document.querySelector(".bycategorie");
-
-//     const FilterByStock = document.querySelector(".bystock");
-
-//     const URL = "http://localhost:3000/api";
-// // async function getProducts() {
-// //     try {
-// //         const response = await  fetch(`${URL}/products`)
-// //         if (!response.ok) {
-// //             throw new Error(`Response status: ${response.status}`);
-// //         }
-// //         const products = await response.json();
-// //         CreatEtDisplayProduct(products);
-// //         /*SearchProduct(products);
-// //         FilterProductByCategorie(products);*/
-// //     }
-// //     catch (error) {
-// //         console.log("une ereure se produit de type " + error);
-// //     }
-// // }
-// // getProducts();
-
-// // function CreatEtDisplayProduct(products) {
-// //     ProductsPlace.innerHTML = "";
-// //     products.forEach((p) => {
-// //         ProductsPlace.innerHTML += `<article id="${p.id}" class="product-card">
-// //                              <img src="http://127.0.0.1:3000${p.image}" alt="PlayStation 5">
-// //                              <p>${p.name}</p>
-// //                              <h3>${p.description}</h3>
-// //                             <h4> $${p.price}</h4>
-// //                              <p>${p.stock} en stock</p>
-// //                             <p>${p.categoryName}</p>
-// //                          <button>
-// //                        <i  data-id="${p.id}"class="fa-solid fa-cart-shopping"></i>
-// //                              Add to Cart
-// //                            </button>
-// //                          </article>`
-// //     })
-// // };
-// // function SearchProduct(products) {
-// //     Search.addEventListener("input", event => {
-// //         const value = event.target.value.toLowerCase();
-
-// //         const result = products.filter(p =>
-// //             p.name.toLowerCase().includes(value)
-// //         );
-
-// //         ProductsPlace.innerHTML = "";
-// //         CreatEtDisplayProduct(result);
-// //     });
-// // };
-
-// // function FilterProductByCategorie(products) {
-
-// //     FilterByCategorie.addEventListener("change", event => {
-
-// //         const value = event.target.value;
-
-// //         const result = products.filter(p => {
-// //             return value === "all" || p.categoryName === value;
-// //         });
-
-// //         CreatEtDisplayProduct(result);
-
-// //     });
-
-// // }
-
-// // function FilterProductByStock(products) {
-// //         const Choix = FilterByStock.value
-// //         if (Choix === "In Stock") {
-// //             const EnStock = products.filter((produit) => produit.stock > 0)
-// //             CreatEtDisplayProduct(EnStock);
-
-// //         }
-// //         else if (Choix === "Out Of Stock") {
-// //             const EnStock = products.filter((produit) => produit.stock <= 0)
-// //             CreatEtDisplayProduct(EnStock);
-// //         }
-// //         else {
-// //             CreatEtDisplayProduct(products);
-// //         }
-// //     };
-
-// //  FilterByStock.addEventListener("change", ()=>
-// // FilterProductByStock()
-// // );
-
+//-----dom
 
 const ProductsPlace = document.querySelector(".products-list");
 const Search = document.querySelector(".search");
@@ -109,7 +19,7 @@ const Categories = {
     Outdoor: 4
 };
 
-
+//-------CreatEtDisplayProduct
 
 function CreatEtDisplayProduct(products) {
     ProductsPlace.innerHTML = "";
@@ -135,6 +45,7 @@ function CreatEtDisplayProduct(products) {
     });
 }
 
+//--------getdata with fetch
 
 function getdata(url = URL) {
 
@@ -155,7 +66,7 @@ function getdata(url = URL) {
         });
 }
 
-
+//---------search
 
 function SearchProduct() {
 
@@ -166,6 +77,7 @@ function SearchProduct() {
 
 Search.addEventListener("input", SearchProduct);
 
+//------------------FilterProductByCategorie
 
 function FilterProductByCategorie() {
 
@@ -184,6 +96,7 @@ function FilterProductByCategorie() {
 
 FilterByCategorie.addEventListener("change", FilterProductByCategorie);
 
+//-----------FilterProductByStock
 
 function FilterProductByStock() {
 
@@ -202,7 +115,7 @@ function FilterProductByStock() {
 
 FilterByStock.addEventListener("change", FilterProductByStock);
 
-
+//--------------FilterProductByPrice
 
 function FilterProductByPrice() {
 
@@ -218,12 +131,32 @@ function FilterProductByPrice() {
 
 FilterByPrix.addEventListener("change", FilterProductByPrice);
 
+ //----------ResetFilters
 
 function ResetFilters() {
     getdata();
 }
 FilterForm.addEventListener("click", ResetFilters);
-
-
-
 getdata();
+
+
+//--------------------------------partie 2
+//----------hideShow
+
+
+function hideShow() {
+  const MyProduct = document.getElementById("myProducts");
+  if (getComputedStyle(MyProduct).display === "none") {
+    MyProduct.style.display = "block";
+  } else {
+    MyProduct.style.display = "none";
+  }
+}
+function showForm() {
+    const MyForm = document.getElementById("clientFormContainer");
+    if (getComputedStyle(MyForm).display === "none") {
+        MyForm.style.display = "block";
+    } else {
+        MyForm.style.display = "none";
+    }
+}

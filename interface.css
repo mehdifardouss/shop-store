@@ -1,5 +1,5 @@
 
-    * { margin: 0;padding: 0;box-sizing: border-box;}
+    * { margin: 2px;padding: 0;box-sizing: border-box;}
 
     body { font-family: Arial, sans-serif; background: #111; color: white;}
 
@@ -34,7 +34,7 @@
 
     form select {flex: 1;padding: 12px;background: #222;color: white;border: 1px solid #444;border-radius: 6px;}
 
-    .products-list { margin: 30px;display: grid;grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));gap: 20px;}
+    .products-list {margin: 30px;display: grid;grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));gap: 20px;}
 
     .product-card { border: #96d422 solid 2px;background: #222;padding: 15px;border-radius: 10px; width: 300px; height: 450px;}
 
@@ -75,47 +75,47 @@
     .social{display: flex;flex-direction: column;gap: 20px;align-items: center;}
 
     .rtulidateur{display: flex; gap: 20px;align-items: center;}.la{display: flex; gap: 5px; align-items: center;}
-     .rtulidateur a{text-decoration: none; color: rgb(72, 156, 3); }
+
+     .rtulidateur a{text-decoration: none; color: rgb(12, 12, 12); }
+
     .iback{background-color: #96d422; border: 1px solid rgb(72, 156, 3); height: 30px;width: 30px;border-radius: 50%;text-align: center;}
 
     .social a i { display: inline-flex;  flex-direction: column; align-items: center; }
-
-    .PRODUCTS { width: 100%;max-width:100%; margin: 50px auto;padding: 25px;background-color: #222; border-radius: 12px;}
-.PRODUCTS article{ height: 200px;}
-    .PRODUCTS h1 {font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;color: rgb(11, 187, 11); gap: 20px; padding-bottom: 10px;}
-
-    .PRODUCTS > p {color: #777;margin-bottom: 25px;}
-
-    .myproduct-card {display: flex;align-items: center;gap: 20px;padding: 20px;margin-bottom: 15px; background-color: #222; border: 2px solid #96d422; border-radius: 10px;color: white;}
-
+/* ----------------------------------------------INTERFAVE V2 */
+    #myProducts {  z-index: 1;display: none;width: 100% ;height: 100%;max-width: 60%;margin-right:10PX ;padding: 25px;background-color: #222;border-radius: 12px;position: fixed;  overflow-Y: scroll;}
+    .PRODUCTS article{ height: 180px;}
+    .PRODUCTS h1 {  margin-left: 50PX;font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;color: rgb(11, 187, 11); gap: 20px; padding-bottom: 10px;}
+    .PRODUCTS  p {color: #777;margin-bottom: 25px;  margin-left: 50PX;}
+    .myproduct-card {margin-left: 30px;display: flex;align-items: center;gap: 20px;padding: 20px;margin-bottom: 15px; background-color: #222; border: 2px solid #96d422; border-radius: 10px;color: white;    }
     .myproduct-card img {width: 180px;height: 150px;object-fit: contain;}
-
-    .myproduct-card h3 {font-size: 20px;color: #ffffff;}
-
+    .myproduct-card h3 { font-size: 20px;color: #ffffff;}
     .myproduct-card h4 {color: #96d422;font-size: 20px; }
-
-    .dataa {display: flex; justify-content: space-between; flex-direction: row; gap: 90px; align-items: center;}
-
+    .dataa {display: flex; justify-content: space-between; flex-direction: row; gap: 15px; align-items: center; }
     .deleteproduct {background-color:red ;padding: 20px;margin-bottom: 20px; border-radius: 10px;border: 1px solid ;color: #111;font-weight: bolder;font-size: 100%;}
-
-    .totale {text-align: right;font-size: 30px;font-weight: bold;color: #04a038;margin-top: 25px;}
-     
-    .addorders {display: block;margin-left: auto;padding: 12px 22px;border: none;border-radius: 7px;background-color: #04a038;color: white;}
-
+    .totale {text-align: left;font-size: 30px;font-weight: bold;color: #04a038;margin-top: 25px; margin: 50px;}
     .confirmebutton {background-color:rgb(72, 156, 3) ;padding: 20px;margin-bottom: 20px; border-radius: 10px;border: 1px solid ;color: #111;font-weight: bolder;font-size: 100%;}
-
     .addorders:hover{  transform: translateY(-2px); }
-
     .deleteproduct:hover{  transform: translateY(-2px); }
-
     .confirmebutton :hover{  transform: translateY(-2px); }
-
     .buttons{ margin-left: auto; align-items: center;}
-
-    .client-form { width: 90%;margin: 80px; padding: 25px; display: flex; flex-direction: column;gap: 18px;background-color: #222;border: 2px solid #96d422;border-radius: 10px;}
+    .client-form { margin: 0px;width: 100%;margin: 0;padding: 25px;display: flex;flex-direction: column;gap: 18px;background-color: #222;border: 2px solid #0b9d30;border-radius: 10px; height: 100vh;}
     .client-form h2 {font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;color: rgb(11, 187, 11); gap: 20px; padding-bottom: 10px;}
-
-    .form-client input{width: 100%;padding: 12px;background-color: #181818;color: white;border: 1px solid #1b9f07;border-radius: 6px;}
-
-    .client-form .confirm-order { padding: 14px; ; background-color: #96d422; color: #111;border: none; border-radius: 6px; font-weight: bold;}
-
+    .form-client input{width: 95%;padding: 12px;background-color: #181818;color: white;border: 1px solid #1b9f07;border-radius: 6px;}
+    .client-form .confirm-order {width: 95%; padding: 14px; ; background-color: #96d422; color: #111;border: none; border-radius: 6px; font-weight: bold;}
+    .resetorder{ padding: 14px; ; background-color: #96d422; color: #111;border: none; border-radius: 6px; font-weight: bold;}
+    .formeee { display: none; position: fixed;top: 0; right: 12PX; width: 40%;z-index: 2;margin: 0PX;}
+    .fnc{display: flex; height: 120px; width: 800px;}
+    .addorders {display: block;margin-left: 60px;padding: 12px 22px;border: none;border-radius: 7px;background-color: #04a038;color: #444; width: 100%;}
+    .addorders2 {position: fixed;top: 0;left: 10px;display: flex;flex-direction: column;justify-content: center;gap: 14px;width: 44px;height: 100%;margin: 0;padding: 12px 0;background-color: #96d422;color: #111;}
+    .tiitre{font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;padding-bottom: 20px;margin-top: 30px;color: rgb(11, 187, 11); gap: 20px; padding-bottom: 10px; margin-left: 50px;}
+    .description{margin-left: 60px; padding-bottom: 40px;}
+    .dataaa{display: flex; justify-content: space-between; flex-direction: row; gap: 50px; align-items: center;}
+    .statu{ color: #96d422; background-color: #111 ;border: #1b9f07 1px solid ; padding: 10px;top: 0; margin-bottom: 110px;margin-left: 20px; }
+    .search{width: 100%;padding: 12px;background-color: #181818;color: white;border: 1px solid #1b9f07;border-radius: 6px;}
+    .iin{background-color: #232222; border: none; height: 60px;border-radius: 10px; width: 85%; margin-right: 40PX;margin-top: 5PX;}
+    #emaAil::placeholder {padding: 30px; color: #96d422;}
+    .vos{font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;padding-bottom: 20px;margin-top: 30px;color: rgb(11, 187, 11); gap: 20px; padding-bottom: 10px; margin-left: 50px;margin: 40px;}
+    .resetorderr {position: fixed;top: 50%;right: 12px;z-index: 3;display: flex;align-items: center;justify-content: center;width: 44px;height: min(90vh, 690px);margin: 0;padding: 0;background-color: #96d422;color: #111;border: none;border-radius: 12px;cursor: pointer;transform: translateY(-50%);transition: background-color 0.2s ease, transform 0.2s ease;}
+    .resetorderr:focus-visible {outline: 3px solid white;outline-offset: 3px;}
+    .resetorderr i {font-size: 16px;}
+  
