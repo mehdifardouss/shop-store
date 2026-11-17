@@ -90,7 +90,7 @@
     .myproduct-card img {width: 180px;height: 150px;object-fit: contain;}
     .myproduct-card h3 { font-size: 20px;color: #ffffff;}
     .myproduct-card h4 {color: #96d422;font-size: 20px; }
-    .dataa {display: flex; justify-content: space-between; flex-direction: row; gap: 35px; align-items: center; }
+    .dataa {display: flex; justify-content: space-between; flex-direction: row; gap: 15px; align-items: center; }
     .deleteproduct {background-color:red ;padding: 20px;margin-bottom: 20px; border-radius: 10px;border: 1px solid ;color: #111;font-weight: bolder;font-size: 100%;}
     .totale {text-align: left;font-size: 30px;font-weight: bold;color: #04a038;margin-top: 25px; margin: 50px;}
     .confirmebutton {background-color:rgb(72, 156, 3) ;padding: 20px;margin-bottom: 20px; border-radius: 10px;border: 1px solid ;color: #111;font-weight: bolder;font-size: 100%;}
