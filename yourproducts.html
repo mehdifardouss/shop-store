@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Suivre mes commandes</title>
+    <link rel="stylesheet" href="interface.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="src/newlogo.png" alt="Shop Logo">
+            <h1>SHOP</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="interface.html">Home</a></li>
+                 <li><a href="yourproducts.html">mes produits</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+
+    <div class="container">
+        <h1 class="tiitre">Suivre ma commande</h1>
+        <p class="description">Entrez votre adresse e-mail pour retrouver vo commandes</p>
+        <div class="search">
+            <input  class="iin" type="email" id="emaAil" placeholder="Entrez votre adresse e-mail .....">
+            <button onclick="searchOrder()">Rechercher</button>
+        </div>
+        <div class="order-card">
+            <div class="order-header">
+                <div>
+                    <h3 class="vos"> Vos Commande </h3>
+                     
+                </div>
+<article id="${p.id}" class="myproduct-card">
+        <div class="dataaa">
+        <img src="src/ps5.png" alt="PlayStation 5">
+                            <p>Sony · Consoles</p>
+                            <h3>PlayStation 5</h3>
+                            <h4>$499.99</h4>
+                            <p>DDD</p>
+                            <div class="quantity">
+                            <input type="number" value="1" min="1" style="width: 40px; background-color:green;border: none;">
+  
+</div>
+
+   <div class="buttons">
+         <button class="deleteproduct">
+            <i class="fa-solid fa-trash"></i>
+            Remove
+        </button>
+        <button class="confirmebutton">
+            <i class="fa-regular fa-square-check"></i>
+            confirmer
+        </button>
+   </div><div>   <p class="statu">status</p></div>
+    </article>
+     <article id="${p.id}" class="myproduct-card">
+        <div class="dataaa">
+        <img src="src/ps5.png" alt="PlayStation 5">
+                            <p>Sony · Consoles</p>
+                            <h3>PlayStation 5</h3>
+                            <h4>$499.99</h4>
+                            <p>DDD</p>
+                            <div class="quantity">
+                            <input type="number" value="1" min="1" style="width: 40px; background-color:green;border: none;">
+  
+</div>
+
+   <div class="buttons">
+         <button class="deleteproduct">
+            <i class="fa-solid fa-trash"></i>
+            Remove
+        </button>
+        <button class="confirmebutton">
+            <i class="fa-regular fa-square-check"></i>
+            confirmer
+        </button>
+        
+   </div><div class="stt">   <p class="statu">status</p></div>
+
+    </article>
+
+
+            <p class="totale">Total : $0</p>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="start">
+            <div class="text">
+                <h2>SHOP</h2>
+                <p>Your ultimate destination for <br>
+                    gaming products and accessories.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#produiit">Products</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="#footer">Apropos de nous</a></li>
+                    <li><a href="#footer">Votre Panier</a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-facebook"> facebook</i></a>
+                    <a href=""><i class="fa-brands fa-instagram"> instagram</i></a>
+                    <a href=""><i class="fa-brands fa-discord"> discord</i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class=" last">
+            <p> 2026 SHOP. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="shop.js"></script>
+</body>
+</html>
